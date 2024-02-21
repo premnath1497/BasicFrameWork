@@ -18,7 +18,7 @@ public class RunnerMain {
 		Helper.ClickonLogin(Elements.xpathFacebooklogin);
 		Helper.verificationOfTitle(TestData.expectedTitle);
 		Helper.closeBrowser();
-		   
+		
            
 
 	}

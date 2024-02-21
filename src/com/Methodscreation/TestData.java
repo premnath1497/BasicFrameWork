@@ -9,4 +9,6 @@ public class TestData {
     public static String faceBookUrL="https://www.facebook.com/";
     public static String fusername="prem@123";
     public static String fpassword="prem@123";
+    
+    
 }

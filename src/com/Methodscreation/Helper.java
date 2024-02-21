@@ -29,18 +29,21 @@ public class Helper {
 	public static String verificationOfTitle(String expectedTilte) {
 		
 		String actualTitle=driver.getTitle();
+		
+		if(actualTitle.equals(expectedTilte)) 
+			
+			{
+				   System.out.println("Test Case Passed");
+				   
+			   }
+			   else {
+				   System.out.println("Test Case Failed");
+			   }
+		
         
-		   
-		   if(actualTitle.equals(expectedTilte)) {
-			   System.out.println("Test Case Passed");
-		   }
-		   else {
-			   System.out.println("Test Case Failed");
-		   }
-		   
-		   return actualTitle;
+		return actualTitle;
 	}
-	
+
 	public static void enterUserName(String xpathUserName,String userName) {
 		  WebElement username=driver.findElement(By.xpath(xpathUserName));
 		   username.sendKeys(userName);
